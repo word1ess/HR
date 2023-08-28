@@ -1,0 +1,463 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <script defer src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script defer src="js/app.min.js"></script>
+    <title>Главная</title>
+</head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+    <div class="header__row">
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="img/svgicons/logo-header.svg" alt="logo">
+            </a>
+        </div>
+        <div class="header__burger">
+            <span>
+
+            </span>
+        </div>
+        <nav class="header__menu">
+            <ul class="header__list">
+                <li>
+                    <a href="index.html" class="header__link">Главная</a>
+                </li>
+                <li>
+                    <a href="events.html" class="header__link">События</a>
+                </li>
+                <li>
+                    <a href="history.html" class="header__link">Истории успеха</a>
+                </li>
+                <li>
+                    <a href="vacansies.html" class="header__link">Вакансии</a>
+                </li>
+            </ul>
+            <a href="#" class="header__link__product mobile">Перейти на сайт
+                с продукцией</a>
+            <button class="header__btn btn mobile"><p>Хочу в команду</p><span class="flare"></span></button>
+        </nav>
+        <a href="#" class="header__link__product">Перейти на сайт
+            с продукцией</a>
+        <button class="header__btn btn"><p>Хочу в команду</p><span class="flare"></span></button>
+    </div>
+</header>
+            <main class="content no-padding">
+                <section class="intro">
+                    <video src="files/hr.mp4" class="intro__video" autoplay muted loop></video>
+                    <div class="container">
+                        <div class="intro__row">
+                            <h2 class="intro__suptitle">Наша компания -</h2>
+                            <h1 class="intro__title">Это прежде всего
+                                люди!</h1>
+                        </div>
+                    </div>
+                    <div class="intro__team team-intro">
+                        <div class="team-intro__row">
+                            <h3>Мы ждем в наш прекрасный рабочий коллектив новых сотрудников! </h3>
+                            <div class="team-intro__items">
+                                <div class="team-intro__item">
+                                    <img src="img/svgicons/intro-smile-1.svg" alt="">
+                                    <p>Но, нам не нужны те, кто приходит просто отсидеться до пенсии, нам нужны те, кто приходит работать,<b> расти и развиваться.</b>
+                                        <br />
+                                        <br />
+                                        Кто готов вместе с компанией ставить <b>очередные достижения</b> и покорять новые вершины. Кто готов постигать новое и не застревать на
+                                        достигнутом.
+                                    </p>
+                                </div>
+                                <div class="team-intro__item">
+                                    <img src="img/svgicons/intro-smile-2.svg" alt="">
+                                    <p><b>Работать у нас весело и интересно!</b> И мы не приветствуем, когда у нас засиживаются в помощниках, мы всячески способствуем
+                                        карьерному и
+                                        <b>профессиональному росту</b> сотрудников, создавая для этого все возможные условия.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="work">
+                    <div class="container">
+                        <div class="work__row">
+                            <h2 class="title">Работа у нас - это:</h2>
+                            <div class="work__slider swiper">
+                                <div class="work__items swiper-wrapper">
+                                    <div class="work__item swiper-slide">
+                                        <h3>Классные коллеги</h3>
+                                        <img src="img/work/1.jpg" alt="">
+
+                                        <div class="work__hover">
+                                            <b>На регулярной основе</b> у нас проходит обучение, тренинги, мастер-классы с приглашенными <b>ТОП - спикерами</b>. После прохождения
+                                            обучения, Вы
+                                            получаете сертификат. И все это <b>за счет компании!</b>
+                                        </div>
+                                    </div>
+                                    <div class="work__item swiper-slide">
+                                        <h3>Шанс реализоваться</h3>
+                                        <img src="img/work/2.jpg" alt="">
+                                        <div class="work__hover">
+                                            <b>На регулярной основе</b> у нас проходит обучение, тренинги, мастер-классы с приглашенными <b>ТОП - спикерами</b>. После прохождения
+                                            обучения, Вы
+                                            получаете сертификат. И все это <b>за счет компании!</b>
+                                        </div>
+                                    </div>
+                                    <div class="work__item swiper-slide">
+                                        <h3>Крутой офис</h3>
+                                        <img src="img/work/3.jpg" alt="">
+                                        <div class="work__hover">
+                                            <b>На регулярной основе</b> у нас проходит обучение, тренинги, мастер-классы с приглашенными <b>ТОП - спикерами</b>. После прохождения
+                                            обучения, Вы
+                                            получаете сертификат. И все это <b>за счет компании!</b>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+
+                            </div>
+
+                            <h2 class="title">Работа у нас - это:</h2>
+                            <div class="work__slider swiper">
+                                <div class="work__items swiper-wrapper">
+                                    <div class="work__item swiper-slide">
+                                        <h3>Классные коллеги</h3>
+                                        <img src="img/work/4.jpg" alt="">
+                                        <div class="work__hover">
+                                            <b>На регулярной основе</b> у нас проходит обучение, тренинги, мастер-классы с приглашенными <b>ТОП - спикерами</b>. После прохождения
+                                            обучения, Вы
+                                            получаете сертификат. И все это <b>за счет компании!</b>
+                                        </div>
+                                    </div>
+                                    <div class="work__item swiper-slide">
+                                        <h3>Шанс реализоваться</h3>
+                                        <img src="img/work/5.jpg" alt="">
+                                        <div class="work__hover">
+                                            <b>На регулярной основе</b> у нас проходит обучение, тренинги, мастер-классы с приглашенными <b>ТОП - спикерами</b>. После прохождения
+                                            обучения, Вы
+                                            получаете сертификат. И все это <b>за счет компании!</b>
+                                        </div>
+                                    </div>
+                                    <div class="work__item swiper-slide">
+                                        <h3>Крутой офис</h3>
+                                        <img src="img/work/6.jpg" alt="">
+                                        <div class="work__hover">
+                                            <b>На регулярной основе</b> у нас проходит обучение, тренинги, мастер-классы с приглашенными <b>ТОП - спикерами</b>. После прохождения
+                                            обучения, Вы
+                                            получаете сертификат. И все это <b>за счет компании!</b>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <acticle class="events">
+                    <h2 class="title">События</h2>
+                    <div class="events__slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="events__slide swiper-slide">
+                                <div class="events__img">
+                                    <img src="img/event/1.jpg" alt="event-1">
+                                </div>
+                                <div class="events__text">
+                                    <h3>Путешествие на Алтай</h3>
+                                    <p>Организована максимальная безопасность участников: все группы регистрируются в МЧС, обеспечены прямые контакты с медицинскими учреждениями и
+                                        дежурство профессиональных медработников в наших альплагерях.</p>
+                                    <div class="events__bottom">
+                                        <a href="events.html">Смотреть все фото</a>
+                                        <time datatime="2023-07-02">02.07.2023</time>
+                                    </div>
+                                </div>
+                            </div>
+                            <div href="events-item.html" class="events__slide swiper-slide">
+                                <div class="events__img">
+                                    <img src="img/event/2.jpg" alt="event-1">
+                                </div>
+                                <div class="events__text">
+                                    <h3>Выездной Новогодний корпоратив</h3>
+                                    <p>Организована максимальная безопасность участников: все группы регистрируются в МЧС, обеспечены прямые контакты с медицинскими учреждениями и
+                                        дежурство профессиональных медработников в наших альплагерях.
+                                    </p>
+                                    <div class="events__bottom">
+                                        <a href="events.html">Смотреть все фото</a>
+                                        <time datatime="2023-07-02">02.07.2023</time>
+                                    </div>
+                                </div>
+                            </div>
+                            <div href="events-item.html" class="events__slide swiper-slide">
+                                <div class="events__img">
+                                    <img src="img/event/3.jpg" alt="event-1">
+                                </div>
+                                <div class="events__text">
+                                    <h3>Страйкбол</h3>
+                                    <p>Организована максимальная безопасность участников: все группы регистрируются в МЧС, обеспечены прямые контакты.</p>
+                                    <div class="events__bottom">
+                                        <a href="events.html">Смотреть все фото</a>
+                                        <time datatime="2023-07-02">02.07.2023</time>
+                                    </div>
+                                </div>
+                            </div>
+                            <div href="events-item.html" class="events__slide swiper-slide">
+                                <div class="events__img">
+                                    <img src="img/event/1.jpg" alt="event-1">
+                                </div>
+                                <div class="events__text">
+                                    <h3>Путешествие на Алтай</h3>
+                                    <p>Организована максимальная безопасность участников: все группы регистрируются в МЧС, обеспечены прямые контакты с медицинскими учреждениями и
+                                        дежурство профессиональных медработников в наших альплагерях.</p>
+                                    <div class="events__bottom">
+                                        <a href="events.html">Смотреть все фото</a>
+                                        <time datatime="2023-07-02">02.07.2023</time>
+                                    </div>
+                                </div>
+                            </div>
+                            <div href="events-item.html" class="events__slide swiper-slide">
+                                <div class="events__img">
+                                    <img src="img/event/2.jpg" alt="event-1">
+                                </div>
+                                <div class="events__text">
+                                    <h3>Выездной Новогодний корпоратив</h3>
+                                    <p>Организована максимальная безопасность участников: все группы регистрируются в МЧС, обеспечены прямые контакты с медицинскими учреждениями и
+                                        дежурство профессиональных медработников в наших альплагерях.
+                                    </p>
+                                    <div class="events__bottom">
+                                        <a href="events.html">Смотреть все фото</a>
+                                        <time datatime="2023-07-02">02.07.2023</time>
+                                    </div>
+                                </div>
+                            </div>
+                            <div href="events-item.html" class="events__slide swiper-slide">
+                                <div class="events__img">
+                                    <img src="img/event/3.jpg" alt="event-1">
+                                </div>
+                                <div class="events__text">
+                                    <h3>Страйкбол</h3>
+                                    <p>Организована максимальная безопасность участников: все группы регистрируются в МЧС, обеспечены прямые контакты.</p>
+                                    <div class="events__bottom">
+                                        <a href="events.html">Смотреть все фото</a>
+                                        <time datatime="2023-07-02">02.07.2023</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="events__all">
+                            <a href="events.html">Все события</a>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </acticle>
+                <section class="atmosphere">
+                    <h2 class="title">Атмосфера компании</h2>
+                    <div class="atmosphere__slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="atmosphere__slide swiper-slide">
+                                <img src="img/atmosphere/1.jpg" alt="atmosphere-1">
+                            </div>
+                            <div class="atmosphere__slide swiper-slide">
+                                <img src="img/atmosphere/2.jpg" alt="atmosphere-2">
+                            </div>
+                            <div class="atmosphere__slide swiper-slide">
+                                <img src="img/atmosphere/3.jpg" alt="atmosphere-3">
+                            </div>
+                            <div class="atmosphere__slide swiper-slide">
+                                <img src="img/atmosphere/4.jpg" alt="atmosphere-4">
+                            </div>
+                            <div class="atmosphere__slide swiper-slide">
+                                <img src="img/atmosphere/5.jpg" alt="atmosphere-5">
+                            </div>
+
+                        </div>
+                        <div class="atmosphere__all">
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </section>
+                <section class="vacancies">
+                    <div class="container">
+                        <img src="img/vacancies/bg.jpg" alt="vacancies-bg" class="vacancies__bg">
+                        <div class="vacancies__row">
+                            <h2 class="title">Вакансии</h2>
+                            <div class="vacancies__slider swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="vacancies__slide swiper-slide slide-vacancies gradients__pink">
+                                        <h3>Менеджер по продажам</h3>
+                                        <div class="slide-vacancies__requirements">
+                                            <div class="slide-vacancies__exp">
+                                                <h4>Опыт работы</h4>
+                                                <p>От 3-х лет</p>
+                                            </div>
+                                            <div class="slide-vacancies__fulltime">
+                                                <h4>Занятость:</h4>
+                                                <p>Полная</p>
+                                            </div>
+                                            <div class="slide-vacancies__sallary">
+                                                <h4>Оклад:</р>
+                                                <p>80 000 ₽ + %</p>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="slide-vacancies__btn btn-white">Подробнее</a>
+                                    </div>
+                                    <div class="vacancies__slide swiper-slide slide-vacancies gradients__pink-blue">
+                                        <h3>Помошник менеджера по продажам</h3>
+                                        <div class="slide-vacancies__requirements">
+                                            <div class="slide-vacancies__exp">
+                                                <h4>Опыт работы</h4>
+                                                <p>Без опыта</p>
+                                            </div>
+                                            <div class="slide-vacancies__fulltime">
+                                                <h4>Занятость:</h4>
+                                                <p>Полная</p>
+                                            </div>
+                                            <div class="slide-vacancies__sallary">
+                                                <h4>Оклад:</h4>
+                                                <p>80 000 ₽ + %</p>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="slide-vacancies__btn btn-white">Подробнее</a>
+                                    </div>
+                                </div>
+                                <div class="vacancies__all">
+                                    <a href="vacansies.html">Все вакансии</a>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="history">
+                    <img src="img/history/bg.jpg" alt="history__bg" class="history__bg">
+                    <div class="container">
+                        <h2 class="title">Истории успеха</h2>
+                        <div class="history__slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="history__slide swiper-slide slide-history">
+                                    <div class="slide-history__info">
+                                        <div class="slide-history__text">
+                                            <h3>- Александр, расскажи, как тебе работа в компании?</h3>
+                                            <p>- Во ВСЕСВЕТОДИОДЫ я работаю с ноября 2020года. Пришел старшим менеджером отдела продаж, прошёл обучение и приступил к созданию
+                                                нового отдела. Постепенно собрали команду, разработали мотивацию для сотрудников. Сейчас добиваемся поставленных целей, штурмуем
+                                                новые вершины и идём только вперед. В настоящее время возглавляю федеральное направление продаж. Построить успешную карьеру мне
+                                                помогли проактивная жизненная позиция и полученные знания. Я верю в то что: мы можем принести пользу для наших партнеров, как со
+                                                стороны комфорта работы сотрудников этих компаний, так и с финансовой точки зрения.</p>
+                                            <h3>- Какие плюсы ты видишь в своей работе?</h3>
+                                            <p>- Компания даёт возможность реализовать себя, проявляя лидерские качества. Показывая результаты можно в короткие сроки достигнуть
+                                                карьерных высот, а переговоры на высших уровнях дают возможность обрести широкие и полезные связи. Политика компании нацелена на
+                                                выстраивание долгосрочных отношений с клиентами, построенных на эффективном сотрудничестве по автоматизации различных сфер
+                                                деятельности. Принцип полезности</p>
+                                        </div>
+                                        <a href="histoty.html" class="btn-white">Все истории</a>
+                                    </div>
+                                    <div class="slide-history__introduce">
+                                        <div class="slide-history__img">
+                                            <img src="img/history/selivanov.png" alt="">
+                                        </div>
+                                        <div class="slide-history__name">
+                                            <h3>Селиванов Александр</h3>
+                                            <p>Руководитель Федерального Направления продаж</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="history__slide swiper-slide slide-history">
+                                    <div class="slide-history__info">
+                                        <div class="slide-history__text">
+                                            <h3>- Александр, расскажи, как тебе работа в компании?</h3>
+                                            <p>- Во ВСЕСВЕТОДИОДЫ я работаю с ноября 2020года. Пришел старшим менеджером отдела продаж, прошёл обучение и приступил к созданию
+                                                нового отдела. Постепенно собрали команду, разработали мотивацию для сотрудников. Сейчас добиваемся поставленных целей, штурмуем
+                                                новые вершины и идём только вперед. В настоящее время возглавляю федеральное направление продаж. Построить успешную карьеру мне
+                                                помогли проактивная жизненная позиция и полученные знания. Я верю в то что: мы можем принести пользу для наших партнеров, как со
+                                                стороны комфорта работы сотрудников этих компаний, так и с финансовой точки зрения.</p>
+                                            <h3>- Какие плюсы ты видишь в своей работе?</h3>
+                                            <p>- Компания даёт возможность реализовать себя, проявляя лидерские качества. Показывая результаты можно в короткие сроки достигнуть
+                                                карьерных высот, а переговоры на высших уровнях дают возможность обрести широкие и полезные связи. Политика компании нацелена на
+                                                выстраивание долгосрочных отношений с клиентами, построенных на эффективном сотрудничестве по автоматизации различных сфер
+                                                деятельности. Принцип полезности</p>
+                                        </div>
+                                        <a href="histoty.html" class="btn-white">Все истории</a>
+                                    </div>
+                                    <div class="slide-history__introduce">
+                                        <div class="slide-history__img">
+                                            <img src="img/history/selivanov.png" alt="">
+                                        </div>
+                                        <div class="slide-history__name">
+                                            <h3>Селиванов Александр</h3>
+                                            <p>Руководитель Федерального Направления продаж</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-history__all">
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+    <div class="footer__row">
+        <div class="footer__logo">
+            <a href="index.html">
+                <img src="img/svgicons/logo-footer.svg" alt="logo">
+            </a>
+        </div>
+        <nav class="footer__menu">
+            <ul class="footer__list">
+                <li>
+                    <a href="index.html" class="footer__link">Карьера у нас</a>
+                </li>
+                <li>
+                    <a href="events.html" class="footer__link">События</a>
+                </li>
+                <li>
+                    <a href="#.html" class="footer__link">Атмосфера компании</a>
+                </li>
+                <li>
+                    <a href="vacansies.html" class="footer__link">Вакансии</a>
+                </li>
+                <li>
+                    <a href="history.html" class="footer__link">Истории успеха</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="#" class="footer__link__product">Перейти на сайт
+            с продукцией</a>
+        <button class="footer__btn btn"><p>Хочу в команду</p></button>
+        <div class="footer-mobile">
+            <div class="footer__logo">
+                <a href="index.html">
+                    <img src="img/svgicons/logo-footer.svg" alt="logo">
+                </a>
+            </div>
+            <a href="#" class="footer__link__product">Перейти на сайт
+                с продукцией</a>
+            <button class="footer__btn btn"><p>Хочу в команду</p></button>
+        </div>
+    </div>
+    <div class="footer__copy">
+        (с) 2011 - 2023 “ВСЕСВЕТОДИОДЫ”
+    </div>
+</footer>
+        </div>
+    </body>
+
+</html>
