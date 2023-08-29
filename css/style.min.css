@@ -494,6 +494,61 @@ h6 {
   letter-spacing: -1.68px;
 }
 
+.slide-history__text {
+  /* плашка-бегунок и фон */
+  scrollbar-color: #cacaca #d2d2d2;
+}
+
+.slide-history__text::-webkit-scrollbar-thumb {
+  /* плашка-бегунок */
+  width: 5px;
+  background: #cacaca;
+}
+
+.slide-history__text::-webkit-scrollbar-track {
+  /* фон */
+  background: #d2d2d2;
+  width: 1px;
+}
+
+/* W3C standard
+   сейчас только для Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #cacaca #d2d2d2;
+}
+
+/* для Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background: #d2d2d2;
+  width: 1px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #cacaca;
+  border-radius: 5px;
+  width: 1px;
+  border: 1px solid #cacaca;
+}
+
+.events-page__slider .events__slide.swiper-slide-active {
+  transform: scale(1.1);
+}
+
+.events .events-page__slider .swiper-button-prev {
+  left: 19%;
+}
+
+.events .events-page__slider .swiper-button-next {
+  right: 19%;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -831,7 +886,7 @@ h6 {
   display: flex !important;
   flex-direction: column;
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 40px;
   border: 1px solid #d4d4d4;
   background: #fff;
   height: auto !important;
@@ -840,10 +895,10 @@ h6 {
   position: relative;
   width: 100%;
   height: 600px;
-  border-radius: 0px 0px 20px 20px;
+  border-radius: 30px;
   overflow: hidden;
 }
-.events__img img {
+.events__img * {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -946,6 +1001,9 @@ h6 {
   left: 0;
   object-fit: fill;
 }
+.atmosphere .swiper-button-prev, .atmosphere .swiper-button-next {
+  top: 40%;
+}
 .atmosphere .swiper-button-prev {
   left: 17%;
   transform: translate(50%, 0%);
@@ -983,7 +1041,7 @@ h6 {
   box-shadow: 0px 25px 80px 0px rgba(0, 0, 0, 0.03);
   backdrop-filter: blur(14px);
 }
-.vacancies__slider .swiper-wrapper {
+.vacancies__slider {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
@@ -1059,6 +1117,12 @@ h6 {
 .history__slider {
   position: relative;
 }
+.history__slider .swiper-button-next, .history__slider .swiper-button-prev {
+  top: 35%;
+}
+.history__slider .swiper-button-prev {
+  left: 63%;
+}
 .history__slide {
   display: flex;
   gap: 100px;
@@ -1097,6 +1161,9 @@ h6 {
 }
 .slide-history__text p:last-child {
   margin: 0px;
+}
+.slide-history__more {
+  display: none;
 }
 .slide-history__img {
   position: relative;
@@ -1370,7 +1437,7 @@ h6 {
   height: 210px;
   border-radius: 20px;
 }
-.event-item__content-img img {
+.event-item__content-img * {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -1412,6 +1479,9 @@ h6 {
   position: relative;
   overflow: hidden;
   min-height: fit-content;
+}
+.history-items__item:nth-child(1) .history-item__img img, .history-items__item:nth-child(3) .history-item__img img {
+  object-fit: fill;
 }
 .history-items .swiper-button-prev, .history-items .swiper-button-next {
   display: none;
@@ -1480,7 +1550,15 @@ h6 {
 }
 
 .vacancies-page {
-  margin: 128px 0px 50px;
+  margin: 0px 0px 50px;
+  position: relative;
+  padding: 128px 0px 0px;
+}
+.vacancies-page__img {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  top: 0px;
 }
 .vacancies-page__row {
   display: flex;
@@ -1675,6 +1753,10 @@ body {
     right: 20px;
     transform: translate(0, 0);
   }
+  .history__slider .swiper-button-prev {
+    left: auto;
+    right: 390px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .header__row {
@@ -1725,7 +1807,7 @@ body {
     width: 100%;
     height: 100%;
     font-size: 18px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: #fff;
     padding: 150px 30px 30px;
     transition: transform 300ms ease 0ms, opacity 400ms ease-in 300ms;
     z-index: 0;
@@ -1740,7 +1822,7 @@ body {
     flex-direction: column;
     align-items: center;
     position: relative;
-    color: #ffffff;
+    color: #000;
   }
   .header__link, .header__link__product {
     margin: 0;
@@ -1758,7 +1840,7 @@ body {
     margin: 0px;
   }
   .header__link {
-    color: #ffffff;
+    color: #000;
     font-size: 15px;
   }
   .atmosphere__slide.swiper-slide-active {
@@ -1823,6 +1905,9 @@ body {
   .team-intro__items {
     grid-template-columns: 1fr;
   }
+  .team-intro__item p {
+    color: #316376;
+  }
   .work,
   .events,
   .atmosphere {
@@ -1882,6 +1967,37 @@ body {
   .history-items .swiper-button-next {
     display: flex;
     top: 200px;
+  }
+  .vacancies {
+    padding: 300px 0px 0px;
+    height: fit-content;
+  }
+  .vacancies__bg {
+    object-fit: cover;
+  }
+  .vacancies__slider {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .events-page__slider .events__slide.swiper-slide-active {
+    transform: scale(1);
+  }
+  .events .events-page__slider .swiper-button-prev {
+    left: 20px;
+  }
+  .events .events-page__slider .swiper-button-next {
+    right: 20px;
+  }
+  .history-items__item:nth-child(1) .history-item__img img,
+  .history-items__item:nth-child(3) .history-item__img img {
+    object-fit: contain;
+  }
+  .history-item__img {
+    overflow: hidden;
+  }
+  .history-item__img img {
+    height: auto;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -2012,6 +2128,28 @@ body {
     font-size: 20px;
     word-wrap: break-word;
   }
+  .events__img,
+  .atmosphere__slide {
+    height: 268px;
+  }
+  .slide-history__more {
+    color: #474646;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid #474646;
+    display: block;
+    padding: 11px 0px;
+    margin: 0px 0px 30px;
+  }
+  .vacancies-page__btns {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 @media only screen and (max-width: 378px) {
   .header__logo img {
@@ -2038,10 +2176,6 @@ body {
   }
   .team-intro__row h3 {
     font-size: 24px;
-  }
-  .events__img,
-  .atmosphere__slide {
-    height: 228px;
   }
   .events__text h3 {
     font-size: 22px;
